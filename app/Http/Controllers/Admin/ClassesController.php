@@ -66,7 +66,7 @@ class ClassesController extends Controller
      */
     public function create()
     {
-        $this->authorize('admin.class.create');
+        // $this->authorize('admin.class.create');
 
         return view('admin.class.create');
     }

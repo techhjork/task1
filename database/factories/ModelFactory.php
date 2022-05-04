@@ -66,7 +66,5 @@ $factory->define(App\Models\User::class, static function (Faker\Generator $faker
         'class_id' => $faker->randomNumber(5),
         'course_id' => $faker->randomNumber(5),
         'phone_number' => $faker->sentence,
-        
-        
     ];
 });

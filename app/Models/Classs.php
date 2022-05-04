@@ -27,7 +27,7 @@ class Classs extends Model
 
     public function getResourceUrlAttribute()
     {
-        return url('/admin/classes/' . $this->getKey());
+        return url("/admin/classes/" . $this->getKey());
     }
     public function course()
     {

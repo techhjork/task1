@@ -38,6 +38,7 @@ class StudentAuthController extends Controller
      */
     public function postLogin(Request $request)
     {
+        // dd($request);
         $request->validate([
             'email' => 'required',
             'password' => 'required',
@@ -49,7 +50,7 @@ class StudentAuthController extends Controller
                 ->withSuccess('You have Successfully loggedin');
         }
 
-        return redirect("login")->withSuccess('Oppes! You have entered invalid credentials');
+        return redirect("dashboard")->withSuccess('Oppes! You have entered invalid credentials');
     }
 
     /**
